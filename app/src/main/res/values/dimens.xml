@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginpadding_standard">16dip</dimen>
+    <dimen name="marginpadding_standard_small">8dip</dimen>
+    <dimen name="paddinghoritzontal_dialog">24dp</dimen>
+    <dimen name="margintop_dialog_titleandbodytext">20dp</dimen>
+    <dimen name="padding_vertical">@dimen/marginpadding_standard</dimen>
+
+    <dimen name="paddingvertical_tile">20dp</dimen>
+    <dimen name="height_itemlist_twolines">72dp</dimen>
+    <dimen name="height_itemlist_threelines">88dp</dimen>
+    <dimen name="textsize_listelement_primarytext">16sp</dimen>
+    <dimen name="textsize_listelement_secondarytext">14sp</dimen>
+
+    <dimen name="textsize_all_large">20sp</dimen>
+    <dimen name="paddingbottom_recyclerview">@dimen/height_itemlist_twolines</dimen>
+    <dimen name="marginhorizontal_tile">@dimen/marginpadding_standard</dimen>
+</resources>

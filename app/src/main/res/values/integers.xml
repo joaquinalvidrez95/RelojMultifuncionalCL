@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pref_default_brightness">3</integer>
+    <integer name="pref_default_volume">2</integer>
+
+    <integer name="pref_max_brightness">9</integer>
+    <integer name="pref_max_volume">3</integer>
+
+    <integer name="maxMessageLength">180</integer>
+    <integer name="maxTitleLength">35</integer>
+
+    <integer name="passwordLength">4</integer>
+</resources>

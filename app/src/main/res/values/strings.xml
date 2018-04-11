@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Reloj Multifuncional CL</string>
+
+    <string name="button_home_pause">Paro</string>
+    <string name="button_home_start">Arranque</string>
+    <string name="button_home_reset">Reset</string>
+    <string name="title_tab_home">Principal</string>
+    <string name="title_tab_settings">Ajustes</string>
+
+    <string name="menuitem_title_main_about">@string/title_activity_about</string>
+    <string name="menuitem_title_main_bluetooth">@string/title_activity_bluetooth</string>
+
+
+    <string name="title_activity_about">Acerca de</string>
+    <string name="title_activity_bluetooth">Seleccionar dipositivo</string>
+    <string name="toolbar_title_connected">Conectado</string>
+    <string name="toolbar_title_disconnected">Desconectado</string>
+
+    <string name="texthint_messagedialog_title">Título</string>
+    <string name="texthint_messagedialog_text">Cuerpo del mensaje</string>
+    <string name="title_dialog_newmessage">Crear mensaje</string>
+    <string name="title_dialog_editmessage">Editar mensaje</string>
+    <string name="buttontext_messagedialog_accept">Aceptar</string>
+    <string name="buttontext_messagedialog_cancel">@string/dialog_cancel</string>
+    <string name="error_messagedialog_titlerepeated">Título en uso</string>
+    <string name="error_password">Pin incorrecto, intente de nuevo.</string>
+    <string name="error_invaliddevice">Dispositivo inválido.</string>
+    <string name="error_invalidcolours">Color de fondo y texto inválidos</string>
+    <string name="message_connectionfailed">No se logró conectar a %1$s</string>
+    <string name="message_connected">Conectado a %1$s</string>
+    <string name="message_connectionlost">Conexión con %1$s perdida</string>
+
+    <string name="textview_about_website">www.citsadigital.com</string>
+    <string name="textview_about_phone">Tels: (81)8478–7965 y 66</string>
+    <string name="textview_about_emaildesign">disenoelectronico@citsadigital.com</string>
+    <string name="textview_about_emailsupport">soporte@citsadigital.com</string>
+    <string name="textview_about_citsatitle">CITSA DIGITAL®</string>
+    <string name="textview_about_appversion">Version 1.0.1</string>
+
+    <string name="key_mainviewmodel_device">device_key</string>
+    <string name="key_mainviewmodel_devicestate">devicestate_key</string>
+    <string name="key_mainviewmodel_message">MessageKey</string>
+
+    <string name="charactersallowed">!&#32;&#34;#$%&#39;()*+,-./0123456789:;&#60;=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyzñÑ</string>
+    <string name="positivebuttondialog_quickmessage_send">Enviar</string>
+    <string name="negativebuttondialog_quickmessage_cancel">@string/dialog_cancel</string>
+
+    <string name="tabtitle_main_settings">Principal</string>
+    <string name="tabtitle_main_messages">Mensajes</string>
+
+    <string name="pref_summary_on_power">Display apagado</string>
+    <string name="pref_summary_off_power">Display encendido</string>
+
+    <string name="pref_title_time">Mostrar hora</string>
+    <string name="pref_title_date">Mostrar fecha</string>
+    <string name="pref_title_temperature">Mostrar temperatura</string>
+
+    <string name="pref_default_deviceaddress">DeviceAddressDefault</string>
+    <string name="pref_default_timeformat">0</string>
+    <string name="pref_default_displayingmode">0</string>
+    <string name="pref_default_workingmode">0</string>
+    <string name="pref_default_timerstopwatchformat">0</string>
+    <string name="pref_default_password" />
+
+
+    <string name="pref_title_power">Encender display</string>
+    <string name="pref_title_brightness">Brillo</string>
+    <string name="pref_title_volume">Volumen del buzzer</string>
+    <string name="pref_title_timeformat">Formato de hora</string>
+    <string name="pref_title_timerstopwatchformat">Formato de temporizador/cronómetro</string>
+    <string name="pref_title_workingmode">Modo de funcionamiento</string>
+    <string name="pref_title_updatetime">Actualizar hora del display</string>
+
+    <string name="pref_title_category_display">Estado del display</string>
+    <string name="pref_title_category_visibility">Visibilidad</string>
+
+    <string name="pref_key_password">password_key</string>
+    <string name="pref_key_power">power_key</string>
+    <string name="pref_key_brightness">brightness_key</string>
+    <string name="pref_key_volume">volume_key</string>
+    <string name="pref_key_deviceaddress">DeviceAddressKey</string>
+    <string name="pref_key_workingmode">WorkingModeKey</string>
+    <string name="pref_key_timeformat">key_timeformat</string>
+    <string name="pref_key_timerstopwatch">key_timerstopwatchformat</string>
+
+
+    <string-array name="pref_choices_entries_timeformat">
+        <item>24 horas</item>
+        <item>12 horas</item>
+    </string-array>
+    <string-array name="pref_choices_values_timeformat">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_choices_entries_workingmode">
+        <item>Reloj</item>
+        <item>Cronómetro</item>
+        <item>Temporizador</item>
+    </string-array>
+    <string-array name="pref_choices_values_workingmode">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="pref_choices_entries_timerstopwatchformat">
+        <item>Horas:minutos</item>
+        <item>Minutos:segundos</item>
+    </string-array>
+    <string-array name="pref_choices_values_timerstopwatchformat">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="textbutton_about_visitus">Visítanos</string>
+    <string name="header_bondeddevices">Dispositivos sincronizados</string>
+    <string name="header_messageslist">Lista de mensajes</string>
+    <string name="dialog_cancel">Cancelar</string>
+
+
+    <string name="hint_logindialog_pin">Ingrese el pin</string>
+    <string name="titledialog_logindialog">Ingrese el pin</string>
+
+    <string name="allowedcharacters_login">0123456789</string>
+    <string name="message_messageadded">Mensaje agregado</string>
+    <string name="message_messageadeleted">Mensaje eliminado</string>
+    <string name="pref_key_updatetime">pref_key_updatetime</string>
+    <string name="pref_title_category_clock">Reloj</string>
+    <string name="pref_title_category_timerstopwatch">Temporizador/cronómetro cuatro dígitos</string>
+
+</resources>

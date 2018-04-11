@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:selectable="false"
+        android:title="@string/pref_title_category_display">
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:key="@string/pref_key_power"
+            android:summaryOff="@string/pref_summary_on_power"
+            android:summaryOn="@string/pref_summary_off_power"
+            android:title="@string/pref_title_power" />
+
+        <com.citsadigital.relojmultifuncionalcl.custompreference.ListPreferenceAutoSummary
+            android:defaultValue="@string/pref_default_workingmode"
+            android:dependency="@string/pref_key_power"
+            android:entries="@array/pref_choices_entries_workingmode"
+            android:entryValues="@array/pref_choices_values_workingmode"
+            android:key="@string/pref_key_workingmode"
+            android:title="@string/pref_title_workingmode" />
+
+        <SeekBarPreference
+            android:defaultValue="@integer/pref_default_brightness"
+            android:dependency="@string/pref_key_power"
+            android:icon="@drawable/ic_brightness_6_black_24dp"
+            android:key="@string/pref_key_brightness"
+            android:max="@integer/pref_max_brightness"
+            android:title="@string/pref_title_brightness" />
+
+        <SeekBarPreference
+            android:defaultValue="@integer/pref_default_volume"
+            android:dependency="@string/pref_key_power"
+            android:icon="@drawable/ic_volume_up_24dp"
+            android:key="@string/pref_key_volume"
+            android:max="@integer/pref_max_volume"
+            android:title="@string/pref_title_volume" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:dependency="@string/pref_key_power"
+        android:title="@string/pref_title_category_clock">
+        <Preference
+            android:icon="@drawable/ic_update_black_24dp"
+            android:key="@string/pref_key_updatetime"
+            android:title="@string/pref_title_updatetime" />
+
+        <com.citsadigital.relojmultifuncionalcl.custompreference.ListPreferenceAutoSummary
+            android:defaultValue="@string/pref_default_timeformat"
+            android:entries="@array/pref_choices_entries_timeformat"
+            android:entryValues="@array/pref_choices_values_timeformat"
+            android:key="@string/pref_key_timeformat"
+            android:title="@string/pref_title_timeformat" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:dependency="@string/pref_key_power"
+        android:title="@string/pref_title_category_timerstopwatch">
+        <com.citsadigital.relojmultifuncionalcl.custompreference.ListPreferenceAutoSummary
+            android:defaultValue="@string/pref_default_timerstopwatchformat"
+            android:entries="@array/pref_choices_entries_timerstopwatchformat"
+            android:entryValues="@array/pref_choices_values_timerstopwatchformat"
+            android:key="@string/pref_key_timerstopwatch"
+            android:title="@string/pref_title_timerstopwatchformat" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

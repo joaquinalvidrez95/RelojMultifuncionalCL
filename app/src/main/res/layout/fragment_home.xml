@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/marginpadding_standard"
+    android:paddingLeft="@dimen/marginpadding_standard"
+    android:paddingRight="@dimen/marginpadding_standard"
+    android:paddingTop="@dimen/marginpadding_standard"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:drawableBottom="@drawable/ic_play_arrow_white_48dp"
+        android:text="@string/button_home_start"
+        android:theme="@style/Widget.AppCompat.Button.App.Start"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableBottom="@drawable/ic_pause"
+        android:text="@string/button_home_pause"
+        android:theme="@style/Widget.AppCompat.Button.App.Stop"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:drawableBottom="@drawable/ic_refresh_white_48dp"
+        android:text="@string/button_home_reset"
+        android:theme="@style/Widget.AppCompat.Button.App.Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPause" />
+
+</android.support.constraint.ConstraintLayout>
