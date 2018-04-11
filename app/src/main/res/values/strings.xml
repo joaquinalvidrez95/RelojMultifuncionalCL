@@ -129,4 +129,7 @@
     <string name="pref_title_category_clock">Reloj</string>
     <string name="pref_title_category_timerstopwatch">Temporizador/cronómetro cuatro dígitos</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

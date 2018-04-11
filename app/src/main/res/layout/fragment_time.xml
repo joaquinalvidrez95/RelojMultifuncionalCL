@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeFragment">
+
+    <NumberPicker
+        android:id="@+id/pickerHours"
+        style="@style/NumberPickerTime"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pickerMinutes"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/pickerMinutes" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextViewColon"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pickerMinutes"
+        app:layout_constraintEnd_toStartOf="@+id/pickerMinutes"
+        app:layout_constraintTop_toTopOf="@+id/pickerMinutes" />
+
+    <NumberPicker
+        android:id="@+id/pickerMinutes"
+        style="@style/NumberPickerTime"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextViewColon"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pickerMinutes"
+        app:layout_constraintStart_toEndOf="@+id/pickerMinutes"
+        app:layout_constraintTop_toTopOf="@+id/pickerMinutes" />
+
+    <NumberPicker
+        android:id="@+id/pickerSeconds"
+        style="@style/NumberPickerTime"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pickerMinutes"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/pickerMinutes" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Horas"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/pickerHours"
+        app:layout_constraintStart_toStartOf="@+id/pickerHours" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Minutos"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/pickerMinutes"
+        app:layout_constraintStart_toStartOf="@+id/pickerMinutes" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Segundos"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/pickerSeconds"
+        app:layout_constraintStart_toStartOf="@+id/pickerSeconds" />
+
+    <View
+        android:id="@+id/view"
+        style="@style/DividerLine"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pickerMinutes"
+        app:layout_constraintEnd_toEndOf="@+id/pickerSeconds"
+        app:layout_constraintStart_toStartOf="@+id/pickerHours" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/DividerLine"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/pickerSeconds"
+        app:layout_constraintStart_toStartOf="@+id/pickerHours"
+        app:layout_constraintTop_toBottomOf="@+id/pickerMinutes" />
+
+
+</android.support.constraint.ConstraintLayout>

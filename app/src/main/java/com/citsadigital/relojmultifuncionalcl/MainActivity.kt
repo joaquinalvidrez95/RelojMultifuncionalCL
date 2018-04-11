@@ -1,10 +1,10 @@
 package com.citsadigital.relojmultifuncionalcl
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.app.Fragment
 import android.support.v4.view.ViewPager
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupFragments(viewPager: ViewPager, tabLayout: TabLayout) {
         val fragments = ArrayList<Fragment>().apply {
             add(HomeFragment())
+            add(TimeFragment())
             add(SettingsFragment())
         }
         viewPager.apply {
@@ -34,7 +35,11 @@ class MainActivity : AppCompatActivity() {
                 setIcon(R.drawable.ic_home_white_24dp)
             }
             getTabAt(1)?.apply {
-                text=context.getString(R.string.title_tab_settings)
+                text = "Temporizador/cronómetro"
+                setIcon(R.drawable.ic_timer_white_24dp)
+            }
+            getTabAt(2)?.apply {
+                text = context.getString(R.string.title_tab_settings)
                 setIcon(R.drawable.ic_settings_white_24dp)
             }
         }

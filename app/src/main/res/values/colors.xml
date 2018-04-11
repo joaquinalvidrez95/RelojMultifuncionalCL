@@ -4,6 +4,11 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF0000</color>
 
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="divider">#BDBDBD</color>
+
     <color name="colorStart">#4CAF50</color>
     <color name="colorPause">#FFC107</color>
+    <color name="background_darktheme">#303030</color>
 </resources>

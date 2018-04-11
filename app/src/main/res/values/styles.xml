@@ -1,5 +1,5 @@
 <resources>
-
+    <!--Theme.AppCompat.Light.DarkActionBar-->
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -44,6 +44,24 @@
 
     <style name="Widget.AppCompat.Button.App.Reset">
         <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="NumberPickerTime">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+    </style>
+
+    <style name="DividerLine">
+        <item name="android:background">@color/divider</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="TextViewColon">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:text">:</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
 
