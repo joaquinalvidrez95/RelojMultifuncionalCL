@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deviceItem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_itemlist_twolines">
+
+    <TextView
+        android:id="@+id/deviceItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginpadding_standard"
+        android:layout_marginStart="@dimen/marginpadding_standard"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/textsize_listelement_primarytext"
+        app:layout_constraintBottom_toTopOf="@+id/deviceItemAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Bluetooooth" />
+
+    <TextView
+        android:id="@+id/deviceItemAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/textsize_listelement_secondarytext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/deviceItemName"
+        app:layout_constraintTop_toBottomOf="@+id/deviceItemName"
+        tools:text="Dirección MAC" />
+
+
+</android.support.constraint.ConstraintLayout>

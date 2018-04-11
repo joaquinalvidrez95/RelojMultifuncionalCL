@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TimeFragment">
+    tools:context=".fragment.TimeFragment">
 
     <NumberPicker
         android:id="@+id/pickerHours"
@@ -27,7 +27,7 @@
     <NumberPicker
         android:id="@+id/pickerMinutes"
         style="@style/NumberPickerTime"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

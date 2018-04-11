@@ -9,14 +9,14 @@
     android:paddingLeft="@dimen/marginpadding_standard"
     android:paddingRight="@dimen/marginpadding_standard"
     android:paddingTop="@dimen/marginpadding_standard"
-    tools:context=".HomeFragment">
+    tools:context=".fragment.HomeFragment">
 
     <Button
         android:id="@+id/buttonStart"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:drawableBottom="@drawable/ic_play_arrow_white_48dp"
+        android:drawableLeft="@drawable/ic_play_arrow_white_48dp"
         android:text="@string/button_home_start"
         android:theme="@style/Widget.AppCompat.Button.App.Start"
         app:layout_constraintBottom_toTopOf="@+id/buttonPause"
@@ -30,7 +30,7 @@
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:drawableBottom="@drawable/ic_pause"
+        android:drawableLeft="@drawable/ic_pause_white_48dp"
         android:text="@string/button_home_pause"
         android:theme="@style/Widget.AppCompat.Button.App.Stop"
         app:layout_constraintBottom_toTopOf="@+id/buttonReset"
@@ -43,7 +43,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:drawableBottom="@drawable/ic_refresh_white_48dp"
+        android:drawableLeft="@drawable/ic_refresh_white_48dp"
         android:text="@string/button_home_reset"
         android:theme="@style/Widget.AppCompat.Button.App.Reset"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -35,7 +35,7 @@
     <string name="textview_about_emaildesign">disenoelectronico@citsadigital.com</string>
     <string name="textview_about_emailsupport">soporte@citsadigital.com</string>
     <string name="textview_about_citsatitle">CITSA DIGITAL®</string>
-    <string name="textview_about_appversion">Version 1.0.1</string>
+    <string name="textview_about_appversion">Version 1.0.0</string>
 
     <string name="key_mainviewmodel_device">device_key</string>
     <string name="key_mainviewmodel_devicestate">devicestate_key</string>
@@ -129,7 +129,6 @@
     <string name="pref_title_category_clock">Reloj</string>
     <string name="pref_title_category_timerstopwatch">Temporizador/cronómetro cuatro dígitos</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_tab_timerstopwatch">Temp/cron</string>
 
 </resources>

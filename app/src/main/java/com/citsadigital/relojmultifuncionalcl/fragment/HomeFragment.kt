@@ -1,4 +1,4 @@
-package com.citsadigital.relojmultifuncionalcl
+package com.citsadigital.relojmultifuncionalcl.fragment
 
 
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import com.citsadigital.relojmultifuncionalcl.R
 
 
 class HomeFragment : Fragment() {

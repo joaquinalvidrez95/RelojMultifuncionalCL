@@ -46,6 +46,10 @@
         <item name="colorButtonNormal">@color/colorAccent</item>
     </style>
 
+    <style name="Widget.AppCompat.Button.App.ColorPrimary">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
     <style name="NumberPickerTime">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -54,7 +58,7 @@
 
     <style name="DividerLine">
         <item name="android:background">@color/divider</item>
-        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_height">1px</item>
     </style>
 
     <style name="TextViewColon">
@@ -62,6 +66,24 @@
         <item name="android:text">:</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextViewStyle" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="TextViewStyle.About">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextViewStyle.About.Large">
+        <item name="android:textSize">@dimen/textsize_all_large</item>
+    </style>
+
+    <style name="TextViewStyle.About.Small">
+        <item name="android:textColor">@color/secondary_text</item>
     </style>
 
 
