@@ -58,7 +58,7 @@
 
     <style name="DividerLine">
         <item name="android:background">@color/divider</item>
-        <item name="android:layout_height">1px</item>
+        <item name="android:layout_height">1dp</item>
     </style>
 
     <style name="TextViewColon">
