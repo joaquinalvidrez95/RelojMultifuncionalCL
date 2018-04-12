@@ -27,6 +27,7 @@
     <string name="error_invaliddevice">Dispositivo inválido.</string>
     <string name="error_invalidcolours">Color de fondo y texto inválidos</string>
     <string name="message_connectionfailed">No se logró conectar a %1$s</string>
+    <string name="message_invalidtimerstopwatch">En formato Minutos:segundos el tiempo máximo es 01:39:59</string>
     <string name="message_connected">Conectado a %1$s</string>
     <string name="message_connectionlost">Conexión con %1$s perdida</string>
 
@@ -81,7 +82,7 @@
     <string name="pref_key_deviceaddress">DeviceAddressKey</string>
     <string name="pref_key_workingmode">WorkingModeKey</string>
     <string name="pref_key_timeformat">key_timeformat</string>
-    <string name="pref_key_timerstopwatch">key_timerstopwatchformat</string>
+    <string name="pref_key_timerstopwatchformat">key_timerstopwatchformat</string>
 
 
     <string-array name="pref_choices_entries_timeformat">
@@ -95,8 +96,8 @@
 
     <string-array name="pref_choices_entries_workingmode">
         <item>Reloj</item>
-        <item>Cronómetro</item>
         <item>Temporizador</item>
+        <item>Cronómetro</item>
     </string-array>
     <string-array name="pref_choices_values_workingmode">
         <item>0</item>

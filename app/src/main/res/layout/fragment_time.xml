@@ -27,7 +27,7 @@
     <NumberPicker
         android:id="@+id/pickerMinutes"
         style="@style/NumberPickerTime"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSendTime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toTopOf="@+id/pickerMinutes" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSendTime"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

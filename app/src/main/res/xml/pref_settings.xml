@@ -62,7 +62,7 @@
             android:defaultValue="@string/pref_default_timerstopwatchformat"
             android:entries="@array/pref_choices_entries_timerstopwatchformat"
             android:entryValues="@array/pref_choices_values_timerstopwatchformat"
-            android:key="@string/pref_key_timerstopwatch"
+            android:key="@string/pref_key_timerstopwatchformat"
             android:title="@string/pref_title_timerstopwatchformat" />
     </PreferenceCategory>
 
