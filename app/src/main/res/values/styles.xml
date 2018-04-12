@@ -33,16 +33,19 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="Widget.AppCompat.Button.App.Start">
-        <item name="colorButtonNormal">@color/colorStart</item>
-
+    <style name="Widget.AppCompat.Button.App.Command">
+        <item name="android:textSize">@dimen/textsize_button_command</item>
     </style>
 
-    <style name="Widget.AppCompat.Button.App.Stop">
+    <style name="Widget.AppCompat.Button.App.Command.Start">
+        <item name="colorButtonNormal">@color/colorStart</item>
+    </style>
+
+    <style name="Widget.AppCompat.Button.App.Command.Stop">
         <item name="colorButtonNormal">@color/colorPause</item>
     </style>
 
-    <style name="Widget.AppCompat.Button.App.Reset">
+    <style name="Widget.AppCompat.Button.App.Command.Reset">
         <item name="colorButtonNormal">@color/colorAccent</item>
     </style>
 

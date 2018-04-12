@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_vertical_homebutton">16dp</dimen>
+    <dimen name="padding_homebutton">32dp</dimen>
+    <dimen name="textsize_button_command">42sp</dimen>
+
+</resources>

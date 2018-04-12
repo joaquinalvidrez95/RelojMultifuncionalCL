@@ -93,7 +93,11 @@ class MainViewModel(application: Application) : BaseMainViewModel(application) {
     fun sendDateTime() {
         val date = Calendar.getInstance().time
         bluetoothService.write("${BluetoothConstants.Contract.DATE_TIME}${SimpleDateFormat("HHmmssddMMyy").format(date)}\n")
-        if (isConnected.value == true) message.value = date.toString()
+        if (isConnected.value == true)
+            message.value = app.getString(
+                    R.string.message_datetimeupdated,
+                    SimpleDateFormat("HH:mm:ss").format(date),
+                    SimpleDateFormat("dd/MM/yy").format(date))
     }
 
     fun getTimerStopwatch(): LiveData<String> = timerStopwatch
