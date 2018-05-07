@@ -10,7 +10,6 @@ import android.content.*
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.preference.PreferenceManager
-import android.util.Log
 import com.citsadigital.relojmultifuncionalcl.R
 import com.citsadigital.relojmultifuncionalcl.util.BluetoothConstants
 import com.citsadigital.relojmultifuncionalcl.util.BluetoothService
@@ -75,7 +74,7 @@ abstract class BaseMainViewModel(application: Application) : AndroidViewModel(ap
                     val x = msg.obj as Bundle
                     val readBuf = x.getString(app.getString(R.string.key_mainviewmodel_message))
                     val device: BluetoothDevice = x.getParcelable(app.getString(R.string.key_mainviewmodel_device))
-                    Log.d(javaClass.name, readBuf)
+
                     val bundle = Bundle().apply {
                         putParcelable(app.getString(R.string.key_mainviewmodel_device), device)
                     }

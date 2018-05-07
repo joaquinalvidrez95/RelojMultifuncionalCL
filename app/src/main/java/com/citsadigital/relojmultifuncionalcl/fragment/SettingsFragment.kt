@@ -4,7 +4,9 @@ package com.citsadigital.relojmultifuncionalcl.fragment
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
+import android.support.v7.preference.Preference
 import android.support.v7.preference.PreferenceFragmentCompat
+import android.support.v7.preference.SeekBarPreference
 import com.citsadigital.relojmultifuncionalcl.R
 import com.citsadigital.relojmultifuncionalcl.viewmodel.MainViewModel
 
@@ -27,10 +29,16 @@ class SettingsFragment : PreferenceFragmentCompat() {
             mainViewModel?.sendDateTime()
             true
         }
-        findPreference(getString(R.string.pref_key_volume)).setOnPreferenceChangeListener { preference, newValue ->
-            preference.setIcon(if (newValue as Int == 0) R.drawable.ic_volume_off_black_24dp else R.drawable.ic_volume_up_24dp)
+        val volumePreference = findPreference(getString(R.string.pref_key_volume)) as SeekBarPreference
+        updateIcon(volumePreference, volumePreference.value)
+        volumePreference.setOnPreferenceChangeListener { preference, newValue ->
+            updateIcon(preference, newValue)
             true
         }
+    }
+
+    private fun updateIcon(preference: Preference, newValue: Any?) {
+        preference.setIcon(if (newValue as Int == 0) R.drawable.ic_volume_off_black_24dp else R.drawable.ic_volume_up_24dp)
     }
 
 }

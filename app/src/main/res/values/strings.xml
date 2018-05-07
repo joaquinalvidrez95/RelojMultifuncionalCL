@@ -9,7 +9,7 @@
     <string name="title_tab_timerstopwatch">Temp/cron</string>
 
     <string name="title_activity_about">Acerca de</string>
-    <string name="title_activity_bluetooth">Seleccionar dipositivo</string>
+    <string name="title_activity_bluetooth">Seleccionar dispositivo</string>
     <string name="toolbar_title_connected">Conectado</string>
     <string name="toolbar_title_disconnected">Desconectado</string>
 
